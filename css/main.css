@@ -1221,7 +1221,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .display-1--light {
-    color: #FFFFFF;
+    color: #ec008c;
 }
 
 .display-2 {
@@ -1246,7 +1246,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    color: #39b54a;
+    color: #ec008c;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -1861,8 +1861,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid #39b54a;
-    border-right: 2px solid #39b54a;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
     content: '';
     display: block;
     height: 8px;
@@ -1886,7 +1886,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #39b54a;
+    background-color: #fff;
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -2202,7 +2202,8 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    background: #fff;  /* fallback for old browsers */
+  
     color: #010507;
     position: relative;
 }
@@ -2243,7 +2244,7 @@ html.no-csstransitions .home-content__main {
     font-family: "montserrat-bold", sans-serif;
     font-size: 8.4rem;
     line-height: 1;
-    color: #FFFFFF;
+    color: #ec008c;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2263,7 +2264,7 @@ html.no-csstransitions .home-content__main {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #FFFFFF;
+    background-color: #ec008c;
     position: absolute;
     right: 7.2rem;
     top: 0;
@@ -2407,7 +2408,7 @@ html.no-csstransitions .home-content__main {
 
 .services-list .service-icon {
     float: left;
-    color: #39b54a;
+    color: #ec008c;
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -3633,6 +3634,14 @@ footer .row {
     bottom: 0px;
     transform: translateZ(20px);
 
+}
+
+
+.footer{
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 1em;
+    padding: 0;
 }
 
 
