@@ -112,7 +112,7 @@ a:hover, a:active {
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "montserrat-medium", sans-serif;
-    color: #000000;
+    color: #25BEA0;
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -545,7 +545,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #39b54a;
+    background-color: #25BEA0;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -832,8 +832,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: #39b54a;
-    border-color: #39b54a;
+    background: #25BEA0;
+    border-color: #25BEA0;
     color: #FFFFFF;
 }
 
@@ -1221,14 +1221,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .display-1--light {
-    color: #ec008c;
+    color: #374353;
 }
 
 .display-2 {
     font-family: "montserrat-medium", sans-serif;
     font-size: 5.2rem;
     line-height: 1.255;
-    color: #000000;
+    color: #374353;
     margin-top: 0;
 }
 
@@ -1246,13 +1246,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    color: #ec008c;
+    color: #25BEA0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .subhead--dark {
-    color: #000000;
+    color: #25BEA0;
 }
 
 
@@ -1420,7 +1420,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: #39b54a;
+    background: #25BEA0;
 }
 
 
@@ -1513,7 +1513,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #ec008c;
+    color: #25BEA0;
 }
 
 .header-nav p {
@@ -1795,7 +1795,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content h3 {
     font-family: "montserrat-medium", sans-serif;
     font-size: 1.6rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: .3rem;
     position: relative;
@@ -2203,9 +2203,9 @@ html.no-csstransitions .home-content__main {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
     background: #fff;  /* fallback for old browsers */
-  
-    color: #010507;
+    color: #374353;
     position: relative;
+    /* background: url(''); */
 }
 
 .s-about .section-header.has-bottom-sep::before {
@@ -2244,7 +2244,7 @@ html.no-csstransitions .home-content__main {
     font-family: "montserrat-bold", sans-serif;
     font-size: 8.4rem;
     line-height: 1;
-    color: #ec008c;
+    color: #25BEA0;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2254,7 +2254,7 @@ html.no-csstransitions .home-content__main {
 .stats h5 {
     font-family: "montserrat-semibold", sans-serif;
     margin-top: 1.8rem;
-    color: #000000;
+    color: #374353;
     font-size: 1.8rem;
     line-height: 1.333;
     position: relative;
@@ -2374,7 +2374,7 @@ html.no-csstransitions .home-content__main {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
     background-color: #FFFFFF;
-    color: #757575;
+    color: #374353;
     position: relative;
 }
 
@@ -2408,7 +2408,7 @@ html.no-csstransitions .home-content__main {
 
 .services-list .service-icon {
     float: left;
-    color: #ec008c;
+    color: #374353;
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -2995,7 +2995,7 @@ html.no-csstransitions .home-content__main {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #39b54a;
+    background-color: #25BEA0;
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -3022,7 +3022,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-content h5 {
     margin-top: 0;
-    color: #39b54a;
+    color: #25BEA0;
 }
 
 .contact-content input[type="email"],
@@ -3447,8 +3447,8 @@ footer .row {
     top: 0;
     right: 0;
     color: #FFFFFF;
-    background: #39b54a;
-    border-color: #39b54a;
+    background: #25BEA0;
+    border-color: #25BEA0;
     padding: 0 20px;
 }
 
@@ -3613,10 +3613,16 @@ footer .row {
      width: 200px;
      color: #fff;
      font-size: 1.3em;
-
     }
 
 
+    .pixel54-logo h1  {
+        margin-top:0;
+        width: 200px;
+        color: #fff;
+        font-size: 1.3em;
+       }
+   
 
 
 .footer{
