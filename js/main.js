@@ -446,18 +446,6 @@
         });
     };
 
-    /* tilt.js
- * ------------------------------------------------------ */
-
-    var tiltBaby = function () {
-        $('.js-tilt').tilt({
-            glare: true,
-            maxGlare: .5
-
-
-        });
-
-    };
 
 
 
@@ -465,7 +453,7 @@
     /* Initialize
      * ------------------------------------------------------ */
     (function ssInit() {
-        tiltBaby();
+    
         clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
