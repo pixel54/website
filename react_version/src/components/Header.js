@@ -711,7 +711,7 @@ class App extends Component {
 
     </div>
 
-        {/* <div id="preloader">
+        <div id="preloader">
         <div id="loader">
             <div className="line-scale-pulse-out">
                 <div></div>
@@ -721,7 +721,7 @@ class App extends Component {
                 <div></div>
             </div>
         </div>
-    </div>  */}
+    </div> 
 
 </div>
 
