@@ -32,7 +32,6 @@ const About = () => {
         {/* <!-- end about-desc --> */}
 
         <div className="row about-stats stats block-1-2 block-m-1-2 block-mob-full" data-aos="fade-up">
-
             <div className="col-block stats__col ">
                 <div className="stats__count">1</div>
                 <h5>Awards Received</h5>

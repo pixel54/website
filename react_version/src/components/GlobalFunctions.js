@@ -4,7 +4,7 @@ import AOS from 'aos/dist/aos';
 import slick from 'slick-carousel/slick/slick';
 import PhotoSwipe from 'photoswipe/dist/photoswipe';
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
-// import Waypoint from 'waypoints/lib/jquery.waypoints';
+import Waypoint from 'waypoints/lib/jquery.waypoints';
 
 
 class GlobalFunctions extends Component {
@@ -14,7 +14,7 @@ class GlobalFunctions extends Component {
             scrollDuration: 0, // smoothscroll duration
             mailChimpURL: 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
         }
-      }
+    }
     componentDidMount() {
         this.clPreloader();
         this.clMenuOnScrolldown();
@@ -24,13 +24,15 @@ class GlobalFunctions extends Component {
         this.clSmoothScroll();
         this.clSlickSlider();
         this.clPhotoswipe();
-        // this.clStatCount(); 
+        this.clStatCount();
+
+
     }
 
-    setScroll(){
-       return this.setState({
+    setScroll() {
+        return this.setState({
             scrollDuration: 800
-          });
+        });
     }
 
     clPreloader() {
@@ -52,7 +54,7 @@ class GlobalFunctions extends Component {
         });
     }
 
-      clMenuOnScrolldown() {
+    clMenuOnScrolldown() {
         var menuTrigger = $('.header-menu-toggle');
         $(window).on('scroll', function () {
 
@@ -191,7 +193,7 @@ class GlobalFunctions extends Component {
 
     }
 
-   clPhotoswipe() {
+    clPhotoswipe() {
         var items = [],
             $pswp = $('.pswp')[0],
             $folioItems = $('.item-folio');
@@ -243,35 +245,34 @@ class GlobalFunctions extends Component {
     }
 
     clStatCount() {
-        var statSection = $(".about-stats"),
-            stats = $(".stats__count");
+        $(window).scroll(function () {
+            console.log($(this).scrollTop())
+            if ($(window).scrollTop() > 1160) {
 
-            // var waypoint = new Waypoint({});
-
-        statSection.waypoint({
-            handler: function (direction) {
-                if (direction === "down") {
-                    stats.each(function () {
-                        var $this = $(this);
-                        $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+              
+                var statSection = $(".about-stats"),
+                    stats = $(".stats__count");
+                stats.each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
                             duration: 4000,
                             easing: 'swing',
-                            step: function (curValue) {
-                                $this.text(Math.ceil(curValue));
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
                             }
                         });
-                    });
+                });
+            }
 
-                }
-
-                // trigger once only
-                this.destroy();
-
-            },
-
-            offset: "90%"
 
         });
+
+
+
+
+
+
     };
 
 

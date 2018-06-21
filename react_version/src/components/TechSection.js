@@ -44,7 +44,7 @@ const TechSection = () => {
                         <img src="images/tech/ubuntu.png" alt="tech"/>
                     </a>
                     <a href="#0" title="" className="clients__slide">
-                        <img src="images/tech/" alt="tech"/>
+                        <img src="images/tech/handlebars_logo.png" alt="tech"/>
                     </a>
 
                 </div>
