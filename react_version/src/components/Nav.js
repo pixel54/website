@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
 
-
-
-    const list =  ({href,title})  => {
-       return (
-           <li className="current"><a className="smoothscroll" href={href} title={title}>home</a></li>
-       )
-    }
-
     const Nav = (props) => {
         return (
             <nav className="header-nav">
@@ -19,10 +11,9 @@ import React, { Component } from 'react';
                 <h3>Navigation</h3>
 
                 <ul className="header-nav__list">
-                    {/* <li className="current">
+                    <li className="current">
                         <a className="smoothscroll" href="#home" title="home">Home</a>
-                    </li> */}
-                    <list />
+                    </li>
                     <li>
                         <a className="smoothscroll" href="#about" title="about">Who we are</a>
                     </li>

@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import $ from 'jquery/dist/jquery';
 import AOS from 'aos/dist/aos';
 import slick from 'slick-carousel/slick/slick';
-
+import PhotoSwipe from 'photoswipe/dist/photoswipe';
+import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
+// import Waypoint from 'waypoints/lib/jquery.waypoints';
 
 
 class GlobalFunctions extends Component {
@@ -21,6 +23,8 @@ class GlobalFunctions extends Component {
         this.clBackToTop();
         this.clSmoothScroll();
         this.clSlickSlider();
+        this.clPhotoswipe();
+        // this.clStatCount(); 
     }
 
     setScroll(){
@@ -150,7 +154,7 @@ class GlobalFunctions extends Component {
             dots: true,
             infinite: true,
             slidesToShow: 6,
-            slidesToScroll: 2,
+            slidesToScroll: 6,
             //autoplay: true,
             pauseOnFocus: false,
             autoplaySpeed: 1000,
@@ -158,20 +162,20 @@ class GlobalFunctions extends Component {
                 {
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 5
+                        slidesToShow: 6
                     }
                 },
                 {
                     breakpoint: 1000,
                     settings: {
-                        slidesToShow: 4
+                        slidesToShow: 6
                     }
                 },
                 {
                     breakpoint: 800,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 2
+                        slidesToScroll: 3
                     }
                 },
                 {
@@ -186,6 +190,89 @@ class GlobalFunctions extends Component {
         });
 
     }
+
+   clPhotoswipe() {
+        var items = [],
+            $pswp = $('.pswp')[0],
+            $folioItems = $('.item-folio');
+
+        // get items
+        $folioItems.each(function (i) {
+
+            var $folio = $(this),
+                $thumbLink = $folio.find('.thumb-link'),
+                $title = $folio.find('.item-folio__title'),
+                $caption = $folio.find('.item-folio__caption'),
+                $titleText = '<h4>' + $.trim($title.html()) + '</h4>',
+                $captionText = $.trim($caption.html()),
+                $href = $thumbLink.attr('href'),
+                $size = $thumbLink.data('size').split('x'),
+                $width = $size[0],
+                $height = $size[1];
+
+            var item = {
+                src: $href,
+                w: $width,
+                h: $height
+            }
+
+            if ($caption.length > 0) {
+                item.title = $.trim($titleText + $captionText);
+            }
+
+            items.push(item);
+        });
+
+        // bind click event
+        $folioItems.each(function (i) {
+
+            $(this).on('click', function (e) {
+                e.preventDefault();
+                var options = {
+                    index: i,
+                    showHideOpacity: true
+                }
+
+                // initialize PhotoSwipe
+                var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+                lightBox.init();
+            });
+
+        });
+
+    }
+
+    clStatCount() {
+        var statSection = $(".about-stats"),
+            stats = $(".stats__count");
+
+            // var waypoint = new Waypoint({});
+
+        statSection.waypoint({
+            handler: function (direction) {
+                if (direction === "down") {
+                    stats.each(function () {
+                        var $this = $(this);
+                        $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                            duration: 4000,
+                            easing: 'swing',
+                            step: function (curValue) {
+                                $this.text(Math.ceil(curValue));
+                            }
+                        });
+                    });
+
+                }
+
+                // trigger once only
+                this.destroy();
+
+            },
+
+            offset: "90%"
+
+        });
+    };
 
 
 
