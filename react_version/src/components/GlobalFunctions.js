@@ -24,7 +24,7 @@ class GlobalFunctions extends Component {
         this.clSmoothScroll();
         this.clSlickSlider();
         this.clPhotoswipe();
-        this.clStatCount();
+        // this.clStatCount();
 
 
     }
