@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Subscribe from './Subscribe';
 
 const Footer = () => {
   return (
@@ -20,18 +21,8 @@ const Footer = () => {
             </div>
 
             <div className="col-six tab-full right footer-subscribe">
-
                 <h4>Get Notified</h4>
-            
-
-                <div className="subscribe-form">
-                    <form id="mc-form" className="group" noValidate="true">
-                        <input type="email" value="" name="EMAIL" className="email" id="mc-email" placeholder="Email Address" required=""/>
-                        <input type="submit" name="subscribe" value="Subscribe"/>
-                        <label htmlFor="mc-email" className="subscribe-message"></label>
-                    </form>
-                </div>
-
+                <Subscribe/>
             </div>
 
         </div>
