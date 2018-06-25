@@ -72,7 +72,7 @@ html, body {
 }
 
 body {
-    background: #111111;
+    /* background: #111111; */
     font-family: "montserrat-regular", serif;
     font-size: 1.7rem;
     font-style: normal;
@@ -3332,6 +3332,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
+    background: #111111;
     padding: 9rem 0 6rem;
     font-family: "montserrat-light", sans-serif;
     font-size: 15px;

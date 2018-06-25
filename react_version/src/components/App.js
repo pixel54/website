@@ -2,35 +2,17 @@ import React, { Component } from 'react';
 import '../css/base.css';
 import '../css/vendor.css';
 import '../css/main.css';
-import GlobalFunctions from './GlobalFunctions';
-import Header from './Header';
-import HomeSection from './HomeSection';
-import AboutSection from './AboutSection';
-import ServicesSection from './ServicesSection';
-import TechSection from './TechSection';
-import RecentSection from './RecentSection';
-import ContactSection from './ContactSection';
-import Footer from './Footer';
-import Photoswipe from './Photoswipe';
-import Preloader from './PreLoader';
-
+import { Switch, Route } from 'react-router-dom'
+import MainIndexComps from './MainIndexComps';
+import ThankYou from './ThankYou';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Header />
-        <HomeSection />
-        <AboutSection />
-        <ServicesSection />
-        <TechSection />
-        <RecentSection />
-        <ContactSection />
-        <Footer />
-        <Photoswipe />
-        <Preloader />
-        <GlobalFunctions />
-      </div>
+      <Switch>
+        <Route exact path='/' component={MainIndexComps} />
+        <Route exact path='/thankyou' component={ThankYou} />
+      </Switch>
     );
 
   }
