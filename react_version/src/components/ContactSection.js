@@ -70,7 +70,7 @@ class ContactSection extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <input type="hidden" name="_next" value="//localhost/thanks.html" />
+                                <input type="hidden" name="_next" value="/thankyou" />
                             </fieldset>
                         </form>
 

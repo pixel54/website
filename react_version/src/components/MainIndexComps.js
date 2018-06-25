@@ -7,9 +7,9 @@ import ServicesSection from './ServicesSection';
 import TechSection from './TechSection';
 import RecentSection from './RecentSection';
 import ContactSection from './ContactSection';
-import Footer from './Footer';
 import Photoswipe from './Photoswipe';
 import Preloader from './PreLoader';
+import Footer from './Footer';
 
 
 const MainIndexComps = () => {
