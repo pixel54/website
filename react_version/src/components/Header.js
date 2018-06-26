@@ -7,7 +7,7 @@ class App extends Component {
       <div>
       <header className="s-header">
         <div className="header-logo">
-            <a href="index.html">
+            <a href="/">
                 <div className="pixel54-logo">
                 <h1>pixel54.</h1>
             </div>

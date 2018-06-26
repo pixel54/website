@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+const greyColor = {
+    color: 'rgba(255, 255, 255, 0.4)'
+}
+
+
 class ContactSection extends Component {
     constructor(props) {
         super(props)
@@ -95,8 +100,8 @@ class ContactSection extends Component {
 
                             <div className="cinfo">
                                 <h5>Where to Find Us</h5>
-                                <p> <a>pixel54.co.uk</a> <br/>
-                                    <a>pixel54.io</a>
+                                <p> <a style={greyColor} href="//www.pixel54.co.uk">pixel54.co.uk</a> <br/>
+                                    <a style={greyColor} href="//www.pixel54.github.io">pixel54.io</a>
                                 </p>
                             </div>
 
@@ -111,7 +116,7 @@ class ContactSection extends Component {
                                 <h5>Lets Chat</h5>
                                 <p>
 
-                                    Mobile: <a href="tel:+447931978042">07931978042</a>
+                                    Mobile: <a style={greyColor} href="tel:+447931978042">07931978042</a>
 
                                 </p>
                             </div>

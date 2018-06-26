@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+const light = {
+    color: '#d2d2d2'
+}
+
     const Nav = (props) => {
         return (
             <nav className="header-nav">
@@ -31,10 +35,10 @@ import React, { Component } from 'react';
                     </li>
                 </ul>
 
-                <p>We offer a range of web design, development & consultancy services for our clients. Our core market is design and creative agencies although we do work direct.</p>
+                <p style={light} >We offer a range of web design, development & consultancy services for our clients. Our core market is design and creative agencies although we do work direct.</p>
                 <div className="cinfo">
                     <h5>Lets Chat</h5>
-                    <p>
+                    <p style={light}>
                    
                     Mobile: <a href="tel:+447931978042">07931978042</a>
                   

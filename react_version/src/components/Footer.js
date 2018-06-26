@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import Subscribe from './Subscribe';
 
+
+    
+
+
+
 const Footer = () => {
+ 
+  const date = new Date()
+
   return (
     <footer>
 
@@ -32,7 +40,7 @@ const Footer = () => {
 
             <div className="col-twelve">
                 <div className="copyright">
-                    <span>© Copyright Pixel54 2017</span>
+                    <span>© Copyright Pixel54 {date.getFullYear()}</span>
                 </div>
 
                 <div className="go-top">

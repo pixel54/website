@@ -4,7 +4,8 @@ import AOS from 'aos/dist/aos';
 import slick from 'slick-carousel/slick/slick';
 import PhotoSwipe from 'photoswipe/dist/photoswipe';
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
-import Waypoint from 'waypoints/lib/jquery.waypoints';
+import waypoint from 'waypoints/lib/jquery.waypoints';
+// import $$ from 'jquery-visible';
 
 
 class GlobalFunctions extends Component {
@@ -24,7 +25,7 @@ class GlobalFunctions extends Component {
         this.clSmoothScroll();
         this.clSlickSlider();
         this.clPhotoswipe();
-        // this.clStatCount();
+        this.clStatCount();
 
 
     }
@@ -245,34 +246,22 @@ class GlobalFunctions extends Component {
     }
 
     clStatCount() {
-        $(window).scroll(function () {
-            console.log($(this).scrollTop())
-            if ($(window).scrollTop() > 1160) {
 
-              
-                var statSection = $(".about-stats"),
-                    stats = $(".stats__count");
-                stats.each(function () {
-                    $(this).prop('Counter', 0).animate({
-                        Counter: $(this).text()
-                    }, {
-                            duration: 4000,
-                            easing: 'swing',
-                            step: function (now) {
-                                $(this).text(Math.ceil(now));
-                            }
-                        });
+        var statSection = $(".about-stats"),
+            stats = $(".stats__count");
+
+        stats.each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
                 });
-            }
-
-
-        });
-
-
-
-
-
-
+        })
+        
     };
 
 

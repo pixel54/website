@@ -11,6 +11,7 @@
     "emailjs-com": "^2.2.4",
     "jQuery": "^1.7.4",
     "jquery": "^3.3.1",
+    "jquery-visible": "^1.2.0",
     "jquery-waypoints": "^2.0.5",
     "photoswipe": "^4.1.2",
     "react": "^16.4.0",

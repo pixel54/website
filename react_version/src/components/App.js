@@ -5,6 +5,7 @@ import '../css/main.css';
 import { Switch, Route } from 'react-router-dom'
 import MainIndexComps from './MainIndexComps';
 import ThankYou from './ThankYou';
+import error from './Error';
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
       <Switch>
         <Route exact path='/' component={MainIndexComps} />
         <Route exact path='/thankyou' component={ThankYou} />
+        {/* <Route component={error} /> */}
       </Switch>
     );
 
