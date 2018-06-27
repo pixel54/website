@@ -50,11 +50,11 @@ class ContactSection extends Component {
                         <form name="contactForm" id="contactForm" action="https://formspree.io/tejpal54@gmail.com" method="post"  noValidate="noValidate">
                             <fieldset>
                                 <div className="form-field">
-                                    <input name="contactName" ref="name" onChange={this.upDateValue.bind(this)} value={this.state.name} type="text" id="contactName" placeholder="Your Name" minLength="2" required="" aria-required="true"
+                                    <input name="contactName" ref="name" onChange={this.upDateValue.bind(this)} value={this.state.name} type="text" id="contactName" placeholder="Your Name" minLength="2" required aria-required="true"
                                         className="full-width" />
                                 </div>
                                 <div className="form-field">
-                                    <input name="contactEmail" ref="email" onChange={this.upDateValue.bind(this)} value={this.setState.email} type="email" id="contactEmail" placeholder="Your Email" required="" aria-required="true"
+                                    <input name="contactEmail" ref="email" onChange={this.upDateValue.bind(this)} value={this.setState.email} type="email" id="contactEmail" placeholder="Your Email" required aria-required="true"
                                         className="full-width" />
                                 </div>
                                 <div className="form-field">
@@ -64,6 +64,7 @@ class ContactSection extends Component {
                                     <textarea name="contactMessage" ref="message" onChange={this.upDateValue.bind(this)} value={this.setState.message} id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true"
                                         className="full-width"></textarea>
                                 </div>
+                                <input type="hidden" name="_next" value="/thankyou" />
                                 <div className="form-field">
                                     <button  type="submit" className="full-width btn--primary">Submit</button>
                                     <div className="submit-loader">
@@ -75,7 +76,7 @@ class ContactSection extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <input type="hidden" name="_next" value="/thankyou" />
+                           
                             </fieldset>
                         </form>
 

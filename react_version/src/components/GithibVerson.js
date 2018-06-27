@@ -10,7 +10,7 @@ class GithubVersion extends Component {
        this.state = {
            github : ''
        }
-       this.GetData();
+    //    this.GetData();
 
     }
 
@@ -32,7 +32,7 @@ class GithubVersion extends Component {
 
 
     render() {
-        console.log(this.state.github)
+        // console.log(this.state.github)
         return(
             <div style={PullLeft}>
                 {/* <p style={green}>{this.state.github}</p> */}

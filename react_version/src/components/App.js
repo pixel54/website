@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path='/' component={MainIndexComps} />
-        <Route exact path='/thankyou' component={ThankYou} />
+        <Route path='/thankyou' component={ThankYou} />
         {/* <Route component={error} /> */}
       </Switch>
     );
