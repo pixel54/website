@@ -17,7 +17,14 @@ class GithubVersion extends Component {
     GetData(){
         fetch('https://github.com/pixel54/pixel54.github.io/commits/master.atom')
         .then(data => data.text())
-        .then(data => this.setState({ github:data}))
+        .then((data) => {
+            let str = data
+            let xmlDoc = $.parseXML(str)
+            let $xml = $(xmlDoc)
+            let $title = $xml.find("id")
+            this.setState({ github: $title[1] })
+        })
+
     }
  
     
@@ -25,11 +32,10 @@ class GithubVersion extends Component {
 
 
     render() {
-       let m = this.state.github
-        console.log($.parseXML(m))
+        console.log(this.state.github)
         return(
             <div style={PullLeft}>
-                <span style={green}>{this.m}</span>
+                <p style={green}>{this.state.github}</p>
             </div>    
         )
     }
