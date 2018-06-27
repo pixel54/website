@@ -22,7 +22,7 @@ class GithubVersion extends Component {
             let xmlDoc = $.parseXML(str)
             let $xml = $(xmlDoc)
             let $title = $xml.find("id")
-            this.setState({ github: $title[1] })
+            this.setState({ github: $title[1]})
         })
 
     }
@@ -35,7 +35,7 @@ class GithubVersion extends Component {
         console.log(this.state.github)
         return(
             <div style={PullLeft}>
-                <p style={green}>{this.state.github}</p>
+                {/* <p style={green}>{this.state.github}</p> */}
             </div>    
         )
     }

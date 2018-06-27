@@ -47,7 +47,7 @@ class ContactSection extends Component {
 
                         <h3 className="h6">Send Us A Message</h3>
 
-                        <form name="contactForm" id="contactForm" method="post" action="https://formspree.io/tejpal54@gmail.com" noValidate="noValidate">
+                        <form name="contactForm" id="contactForm" action="https://formspree.io/tejpal54@gmail.com" method="post"  noValidate="noValidate">
                             <fieldset>
                                 <div className="form-field">
                                     <input name="contactName" ref="name" onChange={this.upDateValue.bind(this)} value={this.state.name} type="text" id="contactName" placeholder="Your Name" minLength="2" required="" aria-required="true"
@@ -65,7 +65,7 @@ class ContactSection extends Component {
                                         className="full-width"></textarea>
                                 </div>
                                 <div className="form-field">
-                                    <button className="full-width btn--primary">Submit</button>
+                                    <button  type="submit" className="full-width btn--primary">Submit</button>
                                     <div className="submit-loader">
                                         <div className="text-loader">Sending...</div>
                                         <div className="s-loader">
