@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Subscribe from './Subscribe';
-
+import Version from './GithibVerson'
 
     
 
@@ -25,14 +25,13 @@ const Footer = () => {
                     </a>
                 </div>
                 We are an award winning web design agency with over 20 years experience. We help guide businesses through the digital landscape, designing beautiful experiences for your customers along the way.
-
+                
             </div>
 
             <div className="col-six tab-full right footer-subscribe">
                 {/* <h4>Get Notified</h4>
                 <Subscribe/> */}
             </div>
-
         </div>
         {/* <!-- end footer-main --> */}
 
@@ -41,6 +40,7 @@ const Footer = () => {
             <div className="col-twelve">
                 <div className="copyright">
                     <span>© Copyright Pixel54 {date.getFullYear()}</span>
+                    <Version/>
                 </div>
 
                 <div className="go-top">
@@ -49,7 +49,6 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-
         </div>
         {/* <!-- end footer-bottom --> */}
 
