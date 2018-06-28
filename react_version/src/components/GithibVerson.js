@@ -35,7 +35,11 @@ class GithubVersion extends Component {
         // console.log(this.state.github)
         return(
             <div style={PullLeft}>
+<<<<<<< Updated upstream
                 {/* <p style={green}>{this.state.github}</p> */}
+=======
+                <p style={green}>{this.state}</p>
+>>>>>>> Stashed changes
             </div>    
         )
     }
