@@ -25,8 +25,9 @@ class Subscribe extends Component {
         // console.log(this.state.email_address)
         const proxyurl = "https://cors-anywhere.herokuapp.com/";
         const key = "ecdef0a0fbf073ac3b608b5ef7ff462b-us18";
-        const url = "https://us18.api.mailchimp.com/3.0/lists/7281781f26"; // site that doesn’t send Access-Control-*
+        const url = "https://us18.api.mailchimp.com/3.0/lists/7281781f26?apikey=ecdef0a0fbf073ac3b608b5ef7ff462b-us18"; // site that doesn’t send Access-Control-*
         fetch(proxyurl+url, {
+            mode:'cors',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

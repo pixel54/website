@@ -3054,6 +3054,12 @@ html.no-csstransitions .home-content__main {
 .contact-content .btn {
     margin-top: 3.6rem;
 }
+
+.contact-content button:disabled{
+    background: #d2d2d2;
+    color: #000;
+}
+
 .contact-content input::-webkit-input-placeholder,
 .contact-content select::-webkit-input-placeholder,
 .contact-content textarea::-webkit-input-placeholder {
@@ -3464,6 +3470,7 @@ footer .row {
 
 #mc-form input[type=submit]:disabled{
     background: #d2d2d2;
+    color: #000;
 }
 
 /* ---------------------------------------------------------------
@@ -3611,7 +3618,6 @@ footer .row {
 
 
  .pixel54-logo  {
-
      width: 200px;
      color: #fff;
      font-size: 1.3em;

@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="col-six tab-full left footer-desc">
 
                 <div>
-                    <a className="site-logo" href="index.html">
+                    <a className="site-logo" href="/">
                         <div className="pixel54-logo footer">
                                 <h1>pixel54.</h1>
                         </div>

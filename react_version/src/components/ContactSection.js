@@ -47,7 +47,7 @@ class ContactSection extends Component {
 
                         <h3 className="h6">Send Us A Message</h3>
 
-                        <form name="contactForm" id="contactForm" action="https://formspree.io/tejpal54@gmail.com" method="post"  noValidate="noValidate">
+                        <form name="contactForm" id="contactForm" action="https://formspree.io/hellopixel54@gmail.com" method="post"  noValidate="noValidate">
                             <fieldset>
                                 <div className="form-field">
                                     <input name="contactName" ref="name" onChange={this.upDateValue.bind(this)} value={this.state.name} type="text" id="contactName" placeholder="Your Name" minLength="2" required aria-required="true"
@@ -66,7 +66,7 @@ class ContactSection extends Component {
                                 </div>
                                 <input type="hidden" name="_next" value="/thankyou" />
                                 <div className="form-field">
-                                    <button  type="submit" className="full-width btn--primary">Submit</button>
+                                    <button  type="submit" disabled={!this.state.email} className="full-width btn--primary">Submit</button>
                                     <div className="submit-loader">
                                         <div className="text-loader">Sending...</div>
                                         <div className="s-loader">
@@ -101,15 +101,15 @@ class ContactSection extends Component {
 
                             <div className="cinfo">
                                 <h5>Where to Find Us</h5>
-                                <p> <a style={greyColor} href="//www.pixel54.co.uk">pixel54.co.uk</a> <br/>
-                                    <a style={greyColor} href="//www.pixel54.github.io">pixel54.io</a>
+                                <p>  
+                                    <a style={greyColor} href="//pixel54.github.io">pixel54.github.io</a>
                                 </p>
                             </div>
 
                             <div className="cinfo">
                                 <h5>Send Us a Message</h5>
                                 <p>
-                                    Say hello via the form
+                                  <a style={greyColor} href="mailto:hellopixel54@gmail.com?Subject=Hello" target="_top">Email pixel54</a>
                                 </p>
                             </div>
 
