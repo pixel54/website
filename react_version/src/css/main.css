@@ -3462,6 +3462,9 @@ footer .row {
     padding-right: 6px;
 }
 
+#mc-form input[type=submit]:disabled{
+    background: #d2d2d2;
+}
 
 /* ---------------------------------------------------------------
  * ## footer bottom

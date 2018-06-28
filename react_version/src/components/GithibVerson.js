@@ -17,7 +17,6 @@ class GithubVersion extends Component {
 
     }
 
-
     GetData() {
         const proxyurl = "https://cors-anywhere.herokuapp.com/";
         const url = "https://github.com/pixel54/pixel54.github.io/commits/master.atom"; // site that doesn’t send Access-Control-*
@@ -28,6 +27,7 @@ class GithubVersion extends Component {
                 let xmlDoc = $.parseXML(str)
                 let $xml = $(xmlDoc)
                 let $title = $xml.find("id")
+                console.log($title[1])
                 this.setState({ github: [...$title] })
 
             })
@@ -37,7 +37,6 @@ class GithubVersion extends Component {
 
 
     render() {
-        console.log(this.state.github[1])
         return (
             <div style={PullLeft}>
                 <div id="gitcommit"></div>

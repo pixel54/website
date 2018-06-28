@@ -29,8 +29,8 @@ const Footer = () => {
             </div>
 
             <div className="col-six tab-full right footer-subscribe">
-                {/* <h4>Get Notified</h4>
-                <Subscribe/> */}
+                <h4>Get Notified</h4>
+                <Subscribe/>
             </div>
         </div>
         {/* <!-- end footer-main --> */}
