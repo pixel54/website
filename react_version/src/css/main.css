@@ -83,6 +83,10 @@ body {
     padding: 0;
 }
 
+:root {
+    --main-color: #008c86;
+    --main-old-color: #39b54a;
+}
 
 /* ------------------------------------------------------------------- 
  * ## links
@@ -94,7 +98,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-    color: #39b54a;
+    color: #008c86;
 }
 
 a:hover, a:active {
@@ -365,7 +369,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #39b54a;
+    background: #008c86;
     position: absolute;
     left: -17px;
     top: 11px;
@@ -374,7 +378,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #39b54a;
+    color: #008c86;
 }
 
 dd {
@@ -770,7 +774,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: #39b54a;
+    -webkit-text-fill-color: #008c86;
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -870,8 +874,8 @@ input[type="button"].btn--primary:focus {
 
 .btn--stroke, button.btn--stroke {
     background: transparent !important;
-    border: 0.2rem solid #39b54a;
-    color: #39b54a;
+    border: 0.2rem solid #008c86;
+    color: #008c86;
 }
 
 .btn--stroke:hover, button.btn--stroke:hover {
@@ -1099,7 +1103,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-    color: #39b54a;
+    color: #008c86;
 }
 
 .stats-tabs li a em {
@@ -2975,7 +2979,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #39b54a;
+    background: #008c86;
 }
 
 .s-contact .form-field label::after {
@@ -2986,7 +2990,7 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #39b54a;
+    border-right: 5px solid #008c86;
 }
 
 .contact__line {
@@ -3047,7 +3051,7 @@ html.no-csstransitions .home-content__main {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid #39b54a;
+    border-bottom: 1px solid #008c86;
 }
 
 .contact-content button,
@@ -3056,8 +3060,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-content button:disabled{
-    background: #d2d2d2;
-    color: #000;
+    background: #5d5d5d;
 }
 
 .contact-content input::-webkit-input-placeholder,
@@ -3144,7 +3147,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-social li a:hover, 
 .contact-social li a:focus {
-    color: #39b54a;
+    color: #008c86;
 }
 
 .contact-social li:last-child {
@@ -3167,7 +3170,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .message-success {
-    color: #39b54a;
+    color: #008c86;
 }
 
 .message-warning i, .message-success i {
@@ -3360,7 +3363,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus, footer a:active {
-    color: #39b54a;
+    color: #008c86;
 }
 
 footer .row {
@@ -3469,8 +3472,7 @@ footer .row {
 }
 
 #mc-form input[type=submit]:disabled{
-    background: #d2d2d2;
-    color: #000;
+    background: #5d5d5d;
 }
 
 /* ---------------------------------------------------------------

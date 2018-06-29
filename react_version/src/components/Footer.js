@@ -31,6 +31,20 @@ const Footer = () => {
             <div className="col-six tab-full right footer-subscribe">
                 <h4>Get Notified</h4>
                 <Subscribe/>
+                <ul className="header-nav__social">
+                    <li>
+                        <a target="_blank" href="//www.facebook.com/pixel54/">
+                            <i className="fa fa-facebook"></i>
+                        </a>
+                    </li>
+             
+                    <li>
+                        <a target="_blank" href="//www.instagram.com/pixel_54/">
+                            <i className="fa fa-instagram"></i>
+                        </a>
+                    </li>
+              
+                </ul>
             </div>
         </div>
         {/* <!-- end footer-main --> */}

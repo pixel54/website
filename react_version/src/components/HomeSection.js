@@ -43,40 +43,24 @@ const HomeSection = () => {
             </div>
             {/* <!-- end home-content --> */}
 
-            {/* <!-- 
+
     <ul className="home-social">
         <li>
-            <a href="#0">
+            <a target="_blank" href="//www.facebook.com/pixel54/">
                 <i className="fa fa-facebook" aria-hidden="true"></i>
                 <span>Facebook</span>
             </a>
         </li>
         <li>
-            <a href="#0">
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-                <span>Twiiter</span>
-            </a>
-        </li>
-        <li>
-            <a href="#0">
+            <a target="_blank" href="//www.instagram.com/pixel_54/">
                 <i className="fa fa-instagram" aria-hidden="true"></i>
                 <span>Instagram</span>
             </a>
         </li>
-        <li>
-            <a href="#0">
-                <i className="fa fa-behance" aria-hidden="true"></i>
-                <span>Behance</span>
-            </a>
-        </li>
-        <li>
-            <a href="#0">
-                <i className="fa fa-dribbble" aria-hidden="true"></i>
-                <span>Dribbble</span>
-            </a>
-        </li>
-    </ul> --> */}
-            {/* <!-- end home-social --> */}
+
+
+    </ul> 
+      
 
         </section>
     )

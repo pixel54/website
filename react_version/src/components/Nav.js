@@ -44,33 +44,20 @@ const light = {
                   
                     </p>
                 </div>
-                {/* <!-- <ul className="header-nav__social">
+               <ul className="header-nav__social">
                     <li>
-                        <a href="#">
+                        <a target="_blank" href="//www.facebook.com/pixel54/">
                             <i className="fa fa-facebook"></i>
                         </a>
                     </li>
+             
                     <li>
-                        <a href="#">
-                            <i className="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                        <a target="_blank" href="//www.instagram.com/pixel_54/">
                             <i className="fa fa-instagram"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i className="fa fa-behance"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i className="fa fa-dribbble"></i>
-                        </a>
-                    </li>
-                </ul> --> */}
+              
+                </ul>
 
             </div>
             {/* <!-- end header-nav__content --> */}

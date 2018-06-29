@@ -43,7 +43,7 @@ class Subscribe extends Component {
             .then(function (data) {
                 console.log('Request success: ', data);
                 if(data.status === 200) {
-                    document.querySelector('label.subscribe-message').innerHTML ="Thanks for Subscribing"
+                    document.querySelector('label.subscribe-message').innerHTML ="Bon voyage and Thanks for Subscribing"
                 } else {
                     document.querySelector('label.subscribe-message').innerHTML ="oh dear something went wrong"
                 }
