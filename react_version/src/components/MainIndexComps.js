@@ -8,7 +8,6 @@ import TechSection from './TechSection';
 import RecentSection from './RecentSection';
 import ContactSection from './ContactSection';
 import Photoswipe from './Photoswipe';
-import Preloader from './PreLoader';
 import Footer from './Footer';
 
 
@@ -24,7 +23,6 @@ const MainIndexComps = () => {
             <ContactSection />
             <Footer />
             <Photoswipe />
-            <Preloader />
             <GlobalFunctions />
         </div>
     )

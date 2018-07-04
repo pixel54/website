@@ -6,7 +6,7 @@ import PhotoSwipe from 'photoswipe/dist/photoswipe';
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
 import waypoint from 'waypoints/lib/jquery.waypoints';
 // import $$ from 'jquery-visible';
-
+import bg from '../images/hero-bg.jpg';
 
 class GlobalFunctions extends Component {
     constructor() {
@@ -15,6 +15,8 @@ class GlobalFunctions extends Component {
             scrollDuration: 0, // smoothscroll duration
             mailChimpURL: 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
         }
+        this.loadBigImage();
+
     }
     componentDidMount() {
         this.clPreloader();
@@ -27,13 +29,24 @@ class GlobalFunctions extends Component {
         this.clPhotoswipe();
         this.clStatCount();
 
-
     }
+
+
 
     setScroll() {
         return this.setState({
             scrollDuration: 800
         });
+    }
+
+    loadBigImage(src) {
+        return new Promise((resolve, reject) => {
+            const image = new Image();
+            image.onload = () => resolve(src);
+            image.onerror = err => reject(err);
+            image.src = bg;
+        });
+
     }
 
     clPreloader() {
@@ -261,7 +274,7 @@ class GlobalFunctions extends Component {
                     }
                 });
         })
-        
+
     };
 
 
