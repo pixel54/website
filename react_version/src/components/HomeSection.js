@@ -6,13 +6,30 @@ import small from '../images/hero-bgSmall.jpg'
 class HomeSection extends Component {
     constructor() {
         super()
-
+        this.state = {
+            image: small
+        }
     }
 
+
+    componentDidMount() {
+
+    };
+
+    handleImageLoaded() {
+        this.setState({ image: "//media3.newlookassets.com/i/newlook/578356572.jpg?w=1400" });
+      }
     
+
     render() {
+        setTimeout(
+            function () {
+            this.setState({image: '//media3.newlookassets.com/i/newlook/578356572.jpg?w=1400'})
+        }
+        .bind(this), 
+        2000)
         return (
-            <section id="home" className="s-home target-section" data-parallax="scroll" data-image-src={small} data-natural-width={3000} data-natural-height={2000} data-position-y="center" >
+            <section id="home" className="s-home target-section" data-parallax="scroll" data-image-src="//media3.newlookassets.com/i/newlook/578356572.jpg?w=1400" data-natural-width={3000} data-natural-height={2000} data-position-y="center" >
 
                 {/* <!-- <div className="overlay"></div> -->
     <!-- <div className="shadow-overlay"></div> --> */}
