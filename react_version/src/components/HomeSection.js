@@ -7,29 +7,36 @@ class HomeSection extends Component {
     constructor() {
         super()
         this.state = {
-            image: small
+            image: small,
+            class: 'blur'
         }
+
+
     }
 
-
+2
     componentDidMount() {
-
+        this.changeImage = setTimeout(
+            () => this.waveAfterWave(), 3000
+        );
+ 
     };
 
-    handleImageLoaded() {
-        this.setState({ image: "//media3.newlookassets.com/i/newlook/578356572.jpg?w=1400" });
-      }
+
+
+    waveAfterWave(){
+        this.setState({
+            image: bg,
+            class: 'blur-none'
+        })
+    }
     
 
     render() {
-        setTimeout(
-            function () {
-            this.setState({image: '//media3.newlookassets.com/i/newlook/578356572.jpg?w=1400'})
-        }
-        .bind(this), 
-        2000)
+        // data-parallax="scroll" data-image-src={""} data-natural-width={3000} data-natural-height={2000} data-position-y="center"
         return (
-            <section id="home" className="s-home target-section" data-parallax="scroll" data-image-src="//media3.newlookassets.com/i/newlook/578356572.jpg?w=1400" data-natural-width={3000} data-natural-height={2000} data-position-y="center" >
+            <section id="home" className="s-home target-section" >
+            <img src={this.state.image} className={"s-home target-section " + this.state.class}  data-position-y="center"  data-natural-width={3000} data-parallax="scroll"  data-natural-height={2000} style={{position:'absolute',width:'100%',backgroundSize:'cover',height: 'auto'}} />
 
                 {/* <!-- <div className="overlay"></div> -->
     <!-- <div className="shadow-overlay"></div> --> */}
