@@ -1,43 +1,20 @@
 import React, { Component } from 'react';
-import bg from '../images/hero-bg.jpg';
+import bg from '../images/hero-bgmed.jpg';
 import small from '../images/hero-bgSmall.jpg'
 
 
 class HomeSection extends Component {
-    constructor() {
-        super()
-        this.state = {
-            image: small,
-            class: 'blur'
-        }
+    constructor(props) {
+        super(props)
 
 
     }
 
-2
-    componentDidMount() {
-        this.changeImage = setTimeout(
-            () => this.waveAfterWave(), 3000
-        );
- 
-    };
 
-
-
-    waveAfterWave(){
-        this.setState({
-            image: bg,
-            class: 'blur-none'
-        })
-    }
-    
 
     render() {
-        // data-parallax="scroll" data-image-src={""} data-natural-width={3000} data-natural-height={2000} data-position-y="center"
         return (
-            <section id="home" className="s-home target-section" >
-            <img src={this.state.image} className={"s-home target-section " + this.state.class}  data-position-y="center"  data-natural-width={3000} data-parallax="scroll"  data-natural-height={2000} style={{position:'absolute',width:'100%',backgroundSize:'cover',height: 'auto'}} />
-
+            <section id="home" className="s-home target-section" data-parallax="scroll" data-image-src={bg} data-natural-width={3000} data-natural-height={2000} data-position-y="center" >
                 {/* <!-- <div className="overlay"></div> -->
     <!-- <div className="shadow-overlay"></div> --> */}
 
