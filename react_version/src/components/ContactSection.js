@@ -102,7 +102,7 @@ class ContactSection extends Component {
                             <div className="cinfo">
                                 <h5>Where to Find Us</h5>
                                 <p>  
-                                    <a style={greyColor} href="//pixel54.github.io">pixel54.github.io</a>
+                                    <a style={greyColor} href="//pixel54.co.uk">pixel54.co.uk</a>
                                 </p>
                             </div>
 

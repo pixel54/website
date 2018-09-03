@@ -61,6 +61,7 @@ html {
     font-size: 10px;
 }
 
+
 @media only screen and (max-width: 400px) {
     html {
         font-size: 9.411764705882353px;
@@ -1780,6 +1781,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background: #000000;
 }
 
+.blur {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
 
 /* ------------------------------------------------------------------- 
  * ## home content
@@ -3006,14 +3011,15 @@ html.no-csstransitions .home-content__main {
 
 .contact-content {
     max-width: 1000px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.4); */
     padding-top: 6rem;
     padding-bottom: 6rem;
     font-family: "montserrat-light", sans-serif;
     font-size: 1.5rem;
     line-height: 2;
     position: relative;
+    color: #FFFFFF;
 }
 
 .contact-content h3 {
@@ -3036,8 +3042,9 @@ html.no-csstransitions .home-content__main {
 .contact-content input[type="password"],
 .contact-content textarea,
 .contact-content select {
-    color: rgba(255, 255, 255, 0.6);
+    /* color: rgba(255, 255, 255, 0.6); */
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    color: #FFFFFF;
     margin-bottom: .9rem;
 }
 
@@ -3066,31 +3073,33 @@ html.no-csstransitions .home-content__main {
 .contact-content input::-webkit-input-placeholder,
 .contact-content select::-webkit-input-placeholder,
 .contact-content textarea::-webkit-input-placeholder {
-    color: #4f4f4f;
+    color: #FFFFFF;
+    /* color: #4f4f4f; */
 }
 
 .contact-content input:-moz-placeholder,
 .contact-content select:-moz-placeholder,
 .contact-content textarea:-moz-placeholder {
-    color: #4f4f4f;    /* Firefox 18- */
+    color: #FFFFFF;
+   
 }
 
 .contact-content input::-moz-placeholder,
 .contact-content select::-moz-placeholder,
 .contact-content textarea::-moz-placeholder {
-    color: #4f4f4f;    /* Firefox 19+ */
+    color: #FFFFFF;
 }
 
 .contact-content input:-ms-input-placeholder,
 .contact-content select:-ms-input-placeholder,
 .contact-content textarea:-ms-input-placeholder {
-    color: #4f4f4f;
+    color: #FFFFFF;
 }
 
 .contact-content input.placeholder,
 .contact-content select.placeholder,
 .contact-content textarea.placeholder {
-    color: #4f4f4f !important;
+    color: #FFFFFF;
 }
 .contact-primary, .contact-secondary {
     float: left;
@@ -3128,6 +3137,10 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 4.8rem;
 }
 
+.contact-secondary .cinfo p a {
+   color: #fff !important;
+}
+
 .contact-social {
     list-style: none;
     display: inline-block;
@@ -3147,7 +3160,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-social li a:hover, 
 .contact-social li a:focus {
-    color: #008c86;
+    color: white;
 }
 
 .contact-social li:last-child {

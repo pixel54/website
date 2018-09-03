@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bg from '../images/hero-bgmed.jpg';
+import bg from '../images/hero-bg.jpg';
 import small from '../images/hero-bgSmall.jpg'
 
 
@@ -15,9 +15,6 @@ class HomeSection extends Component {
     render() {
         return (
             <section id="home" className="s-home target-section" data-parallax="scroll" data-image-src={bg} data-natural-width={3000} data-natural-height={2000} data-position-y="center" >
-                {/* <!-- <div className="overlay"></div> -->
-    <!-- <div className="shadow-overlay"></div> --> */}
-
                 <div className="home-content">
 
                     <div className="row home-content__main">
